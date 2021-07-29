@@ -1,0 +1,19 @@
+.header-bg{
+    background-color: #264653;
+}
+.modal-button{
+    color: white;
+    background-color: #E76F51;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.gray-image{
+    filter: grayscale(100%);
+}
+.text-color{
+    color: #E76F51;
+}
+.client-name-color{
+    color: #23A6F0;
+}

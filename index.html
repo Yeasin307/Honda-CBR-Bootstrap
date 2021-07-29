@@ -9,14 +9,243 @@
     <!-- Bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custome css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <header>
+    <!-- Header section -->
+    <header class="header-bg">
+        <div class="container d-flex flex-column flex-md-row flex-lg-row align-items-center p-5 m-auto">
+            <div class="w-100 py-5">
+                <p class="text-white">Computer-controlled digital transistorized with electronic advance</p>
+                <h1 class="text-white fw-bold">Honda CBR 300R</h1>
+                <p class="text-white">There are three major types of motorcycle: street, off-road, and dual purpose.
+                    Within these types, there are many sub-types of motorcycles for different purposes.</p>
 
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">CBR Bike Information</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                This is our most populer bike. Now we are offfering 10% discount of this bike. If you
+                                want to purchase, please click purchase button.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-100">
+                <img class="img-fluid" src="images/Header-bike.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
-
+        <!-- Fetured Bike -->
+        <section class="my-5">
+            <h1 class="text-center fw-bold">Fetured Bikes 2021</h1>
+            <p class="text-center text-color">Best bike collection</p>
+            <div class="container mx-auto mt-5 px-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                    <div class="col"><img class="gray-image" src="images/Feature-bike.jpg" alt=""></div>
+                    <div class="col"><img src="images/Feature-bike.jpg" alt=""></div>
+                    <div class="col"><img class="gray-image" src="images/Feature-bike.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- Happy clients -->
+        <section class="my-5">
+            <h1 class="text-center fw-bold py-5">Happy <span class="text-color">Clients says</span></h1>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center border-2 border rounded-3 p-3">
+                            <img class="w-50 py-4" src="images/User-1.png" alt="">
+                            <p class="text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div><i class="bi bi-star-fill text-color"></i><i class="bi bi-star-fill text-color"></i><i
+                                    class="bi bi-star-fill text-color"></i><i class="bi bi-star-fill text-color"></i><i
+                                    class="bi bi-star text-color"></i></div>
+                            <p class="client-name-color pt-3">Regina Mile</p>
+                            <p>Banker</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center border-2 border rounded-3 p-3">
+                            <img class="w-50 py-4" src="images/User-2.png" alt="">
+                            <p class="text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div><i class="bi bi-star-fill text-color"></i><i class="bi bi-star-fill text-color"></i><i
+                                    class="bi bi-star-fill text-color"></i><i class="bi bi-star-fill text-color"></i><i
+                                    class="bi bi-star text-color"></i></div>
+                            <p class="client-name-color pt-3">Jenifer micks</p>
+                            <p>Actress</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center border-2 border rounded-3 p-3">
+                            <img class="w-50 py-4" src="images/User-3.png" alt="">
+                            <p class="text-center">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div><i class="bi bi-star-fill text-color"></i><i class="bi bi-star-fill text-color"></i><i
+                                    class="bi bi-star-fill text-color"></i><i class="bi bi-star-fill text-color"></i><i
+                                    class="bi bi-star text-color"></i></div>
+                            <p class="client-name-color pt-3">Sonila Philip</p>
+                            <p>Comedian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Frequently Asked -->
+        <section class="my-5">
+            <h1 class="text-center py-5">Frequently Asked <span class="text-color">Questions</span></h1>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+                    <div class="col">
+                        <img class="img-fluid" src="images/Faq.png" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">What are the most important things I
+                                        should know about riding a bike?</button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <strong>Safety First!</strong> Always
+                                        obey the rules of the road. Obey all traffic signals, signs, and laws. Get in
+                                        the mindset of “driving” your bike—not just “riding” your bike. This will help
+                                        you be a more focused and legally compliant bike rider.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">How can I tell if my helmet is old
+                                        and I need a
+                                        new one?</button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It's also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">My bike has been in storage is it
+                                        safe to ride?</button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It's also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">What rules should I follow when
+                                        riding my bike?</button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It's also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">What rules should I follow when
+                                        riding my bike?</button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        element. These classes control the overall appearance, as well as the showing
+                                        and
+                                        hiding via CSS transitions. You can modify any of this with custom CSS or
+                                        overriding
+                                        our default variables. It's also worth noting that just about any HTML can go
+                                        within
+                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
